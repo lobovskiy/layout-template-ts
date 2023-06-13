@@ -1,34 +1,53 @@
-# layout-template
+# layout-template-ts
 
 ## General info
 
-A boilerplate for creating HTML+CSS+JS projects with _development server_ and _SASS/SCSS preprocessor_.
+A boilerplate for creating HTML+CSS+TS projects with _development server_ and _SASS/SCSS preprocessor_.
 
-## Setup
+## Quick start with creating new project using this template
 
-1. Install the project locally using npm:
+1. Create new repository on Github and save github directions for starting work with the repository
+
+2. Clone this template project to your new project folder:
+
+   `git clone https://github.com/this-repo-url.git new-project-folder-name`
+
+3. Delete hidden folder `.git` from the root directory
+
+4. Specify name and version of your project in the `package.json` settings:
+
+   ```
+   {
+     "name": "new-project-name",
+     "version": "1.0.0",
+     ...
+   }
+   ```
+
+5. To add a favicon in `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify a path to where your favicon file is in its value.
+
+   ```
+   module.exports = {
+     ...
+     plugins: [
+       ...
+       new HtmlWebpackPlugin({
+         favicon: './path/to/your-favicon-file.png',
+         ...
+       }),
+       ...
+     ],
+     ...
+   }
+   ```
+
+6. Install dependencies using npm:
 
    `npm install`
 
-2. Specify name of your project as a value of the HtmlWebpackPlugin's `title` property in the `\webpack.config.js` file.
+7. Add information about your project here in README.md
 
-   To add a favicon also uncomment a line with the `favicon` property and specify a path to where your favicon file is as its value.
-
-```
-module.exports = {
-  ...
-  plugins: [
-    ...
-    new HtmlWebpackPlugin({
-      title: 'Your project name',
-      favicon: './path/to/your-favicon-file.png',
-      ...
-    }),
-    ...
-  ],
-  ...
-}
-```
+8. Push repository to Github in accordance with directions for starting work given in the first step.
 
 ## Available scripts
 
@@ -52,6 +71,7 @@ Tools used for handy development:
   - [css-minimizer-webpack-plugin](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/)
   - [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
   - [sass-loader](https://webpack.js.org/loaders/sass-loader/)
+- [Typescript](https://www.npmjs.com/package/typescript) with [parser](https://www.npmjs.com/package/@typescript-eslint/parser), [plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) and ["airbnb" config](https://www.npmjs.com/package/eslint-config-airbnb-typescript) for ESLint
 - [Sass](https://sass-lang.com/)
 - [normalize.css](https://www.npmjs.com/package/normalize.css)
 - [Babel](https://babeljs.io/) with polyfills and "preset-env" preset
