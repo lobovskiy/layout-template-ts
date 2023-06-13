@@ -21,6 +21,7 @@ module.exports = {
   },
   module: {
     rules: [
+      { test: /\.ts$/i, use: 'ts-loader' },
       {
         test: /\.html$/i,
         loader: 'html-loader',
@@ -72,6 +73,9 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
   },
   plugins: [
     new MiniCssExtractPlugin({
