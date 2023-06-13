@@ -25,7 +25,7 @@ const baseConfig = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
-        ]
+        ],
       },
       {
         test: /\.css$/i,
@@ -39,21 +39,21 @@ const baseConfig = {
         type: 'asset/resource',
         generator: {
           filename: 'assets/img/[hash][ext]'
-        }
+        },
       },
       {
         test: /\.(mp3|aac|ogg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/sound/[hash][ext]'
-        }
+        },
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/font/[hash][ext]'
-        }
+        },
       },
       {
         test: /\.m?js$/,
@@ -62,10 +62,10 @@ const baseConfig = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
+          },
+        },
+      },
+    ],
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
@@ -91,8 +91,8 @@ const baseConfig = {
 };
 
 module.exports = ({ mode }) => {
-    const isProductionMode = mode === 'prod';
-    const envConfig = isProductionMode ? require('./webpack.prod.config') : require('./webpack.dev.config');
+  const isProductionMode = mode === 'prod';
+  const envConfig = isProductionMode ? require('./webpack.prod.config') : require('./webpack.dev.config');
 
-    return merge(baseConfig, envConfig);
+  return merge(baseConfig, envConfig);
 };
