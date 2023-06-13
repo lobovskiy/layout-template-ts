@@ -5,7 +5,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['babel-polyfill', './src'],
+  entry: ['babel-polyfill', './src/index.ts'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
