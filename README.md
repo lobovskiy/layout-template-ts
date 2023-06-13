@@ -14,7 +14,11 @@ A boilerplate for creating HTML+CSS+TS projects with _development server_ and _S
 
 3. Delete hidden folder `.git` from the root directory
 
-4. Specify name and version of your project in the `package.json` settings:
+4. Specify title of your app inside the `title` tag of `src/index.html` file:
+
+   `<title>Your app title</title>`
+
+5. Specify name and version of your project in the `package.json` settings:
 
    ```
    {
@@ -24,7 +28,7 @@ A boilerplate for creating HTML+CSS+TS projects with _development server_ and _S
    }
    ```
 
-5. To add a favicon in `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify a path to where your favicon file is in its value.
+6. To add a favicon in `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify a path to where your favicon file is in its value:
 
    ```
    module.exports = {
@@ -41,13 +45,13 @@ A boilerplate for creating HTML+CSS+TS projects with _development server_ and _S
    }
    ```
 
-6. Install dependencies using npm:
+7. Install dependencies using npm:
 
    `npm install`
 
-7. Add information about your project here in README.md
+8. Add information about your project here in README.md
 
-8. Push repository to Github in accordance with directions for starting work given in the first step.
+9. Push repository to Github in accordance with directions for starting work given in the first step.
 
 ## Available scripts
 
