@@ -6,13 +6,13 @@ A boilerplate for creating HTML+CSS+TS projects with _development server_ and _S
 
 ## Quick start with creating new project using this template
 
-1. Create new repository on Github and save github directions for starting work with the repository
+1. Create new repository on Github and save github directions for starting work with the new repository
 
-2. Clone this template project to your new project folder:
+2. Clone this template project to the new local project folder on your PC:
 
    `git clone https://github.com/this-repo-url.git new-project-folder-name`
 
-3. Delete hidden folder `.git` from the root directory
+3. Delete hidden folder `.git` from the root directory of the cloned repository
 
 4. Specify title of your app inside the `title` tag of `src/index.html` file:
 
