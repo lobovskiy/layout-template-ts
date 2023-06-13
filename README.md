@@ -10,7 +10,7 @@ A boilerplate for creating HTML+CSS+TS projects with _development server_ and _S
 
 2. Clone this template project to the new local project folder on your PC:
 
-   `git clone https://github.com/this-repo-url.git path/to/your/new-project-folder-name`
+   `git clone <https://github.com/this-repo-url.git> <path/to/your/new-project-folder-name>`
 
 3. Delete hidden folder `.git` from the root directory of the cloned repository
 
