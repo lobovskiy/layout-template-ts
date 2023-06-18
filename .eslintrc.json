@@ -18,6 +18,9 @@
   },
   "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
+    "import/resolver": {
+      "typescript": {}
+    },
     "no-debugger": "off",
     "no-console": 0,
     "class-methods-use-this": "off",
