@@ -6,6 +6,7 @@
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "airbnb-base",
+    "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
   "overrides": [
@@ -18,9 +19,14 @@
   },
   "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
-    "import/resolver": {
-      "typescript": {}
-    },
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
     "no-debugger": "off",
     "no-console": 0,
     "class-methods-use-this": "off",
