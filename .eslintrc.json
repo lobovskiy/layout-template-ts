@@ -31,6 +31,7 @@
     "no-console": 0,
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
+    "max-lines-per-function": ["error", 40],
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/array-type": [
       "error",
